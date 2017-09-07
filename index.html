@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Content/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/DMDII.css">
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/function.js"></script>
+    <script src="Scripts/bootbox.min.js"></script>
+    <script src="https://code.jquery.com/qunit/qunit-2.4.0.js"></script>
+</head>
+
+<body id="body">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Gear Details</h2>
+                <label for="geartype">Gear Type:</label>
+                <select class="form-control" id="geartype">
+                    <option>Sun</option>
+                    <option>Planet</option>
+                    <option>Ring</option>
+                </select>
+                <label for="Gearouterdiameter">Gear Outer Diameter:</label>
+                <input type="number" step="0.001" id="Gearouterdiameter"><br>
+                <label for="Facewidth">Face width:</label>
+                <input type="number" step="0.001" id="Facewidth"><br>
+                <label for="material">Material:</label>
+                <select class="form-control" id="material">
+                    <option>Steel</option>
+                    <option>Aluminum</option>
+                </select>
+                <label for="Materialhardness">Material hardness:</label>
+                <input type="number" step="0.001" id="Materialhardness"><br>
+                <label for="ProfileAccuracy">Desired Profile Accuracy:</label>
+                <input type="number" step="0.001" id="ProfileAccuracy"><br>
+                <label for="MaterialShape">Raw Material Shape:</label>
+                <select class="form-control" id="MaterialShape">
+                    <option>Cylindrical</option>
+                    <option>Cubic</option>
+                </select>
+                <label for="GearModule">Gear Module:</label>
+                <input type="number" step="0.001" id="GearModule"><br>
+             </div>
+
+            <!--<div class="col-md-3">
+                <h2>Manufacturing</h2>
+                <div><textarea  id="processTextArea"  style="min-width: 100%" data-role="none" ></textarea></div>
+                <label for="processtype">Process Type :</label>
+                <select class="form-control" id="processtype" onchange="processListChange()">
+                    <option>Gear Cutting</option>
+                    <option>Soft Finishing</option>
+                    <option>Hardening</option>
+                    <option>Hard Finishing</option>
+                </select>
+                <label for="process">Process:</label>
+                <select class="form-control" id="process">
+                </select>
+                <label for="Order">Order:</label>
+                <input type="number" step="0.001" id="Order"><br>
+                <label for="Time">Time:</label>
+                <input type="number" step="0.001" id="Time"><br>
+                <label for="Machine">Machine:</label>
+                <input type="number" step="0.001" id="Machine"><br>
+                <button type="button" class="btn btn-primary" onclick="addProcessToTextArea()">Add</button>
+            </div>-->
+            <div class="col-md-3">
+                <h2>Manufacturing</h2>
+                <label for="processtype">Process:</label>
+                <form name="processRadio">
+                   <label>
+                        <input type="radio" name="process" value="1">Gear Cutting:Hobbing->Hardening:Nitriding->Hard Finishing:Grinding
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="process" value="2">Gear Cutting:Hobbing->Soft Finishing:Shaving->Hardening:Nitriding
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="process" value="3">Gear Cutting:Hobbing->Soft Finishing:Shaving->Hard Finishing: Grinding
+                    </label>
+                </form> 
+                <div id="manufacturing">
+                </div>
+         </div>
+
+            <div class="col-md-3" >
+                <h2>Usage</h2>
+                <label for="Speed">Speed:</label>
+                <input type="number" step="0.001" id="Speed"><br>
+                <label for="Torque">Torque:</label>
+                <input type="number" step="0.001" id="Torque"><br>
+                <label for="Misalignment">Misalignment:</label>
+                <input type="number" step="0.001" id="Misalignment"><br>
+                <label for="CenterDistance">Center Distance:</label>
+                <input type="number" step="0.001" id="CenterDistance"><br>
+                <label for="Axialoffset">Axial offset</label>
+                <input type="number" step="0.001" id="Axialoffset"><br>
+            </div>
+            <div class="col-md-3"  id="costcolumn">
+                <h2>Cost</h2>
+                <label for="UnitCost">Unit Cost</label>
+                <input type="number" step="0.001" id="UnitCost"><br>
+                <label for="OperationalandSpareUnits">Operational and Spare Units </label>
+                <input type="number" step="0.001" id="OperationalandSpareUnits"><br>
+                <label for="OperationalUnitsProduced">Operational Units Produced</label>
+                <input type="number" step="0.001" id="OperationalUnitsProduced"><br>
+                <label for="SpareUnitsProduced">Spare Units Produced</label>
+                <input type="number" step="0.001" id="SpareUnitsProduced"><br>
+                <label for="UsageHoursperMonth">Usage Hours per Month</label>
+                <input type="number" step="0.001" id="UsageHoursperMonth"><br>
+                <label for="ReplacementTime">Replacement Time</label>
+                <input type="number" step="0.001" id="ReplacementTime"><br>
+                <label for="ShopVisitCost">Shop Visit Cost</label>
+                <input type="number" step="0.001" id="ShopVisitCost"><br>
+                <label for="CostEscalationRateperyear">Cost Escalation Rate per year</label>
+                <input type="number" step="0.001" id="CostEscalationRateperyear"><br>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="convert()">Calculate</button>
+        <div id="alert_placeholder"></div>
+    </div>
+       
+
+</body>
+</html>

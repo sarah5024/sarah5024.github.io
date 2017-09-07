@@ -1,0 +1,54 @@
+{
+	"scenario 1": {
+		"residual stress": 4,
+		"surface roughness": 21,
+		"speed": 65.39,
+		"torque": 853,
+		"misalignment": 0.432,
+		"center distance": 3423,
+		"axial offset": 0.0032,
+		"life prediction": [{
+			"lambda": 20,
+			"k": 5
+		}]
+	},
+	"scenario 2": {
+		"residual stress": 50,
+		"surface roughness": 10,
+		"speed": 65.9,
+		"torque": 90,
+		"misalignment": 0.08,
+		"center distance": 9,
+		"axial offset": 0.002,
+		"life prediction": [{
+			"lambda": 4,
+			"k": 2
+		}]
+	},
+	"scenario 3": {
+		"residual stress": 40,
+		"surface roughness": 20,
+		"speed": 65.9,
+		"torque": 85,
+		"misalignment": 0.08,
+		"center distance": 9,
+		"axial offset": 0.002,
+		"life prediction": [{
+			"lambda": 9,
+			"k": 5
+		}]
+	},
+	"scenario 4": {
+		"residual stress": 430,
+		"surface roughness": 32,
+		"speed": 32,
+		"torque": 30,
+		"misalignment": 0.089,
+		"center distance": 932,
+		"axial offset": 0.02,
+		"life prediction": [{
+			"lambda": 523,
+			"k": 23
+		}]
+	}
+}

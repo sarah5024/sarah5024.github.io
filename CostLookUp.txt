@@ -1,0 +1,65 @@
+{
+	"scenario 1": {
+		"Manufactured unit cost": 5.322,
+		"operational and spare units": 25420,
+		"operational units produced": 2240,
+		"spare units produced": 2000,
+		"usage hours per month": 10,
+		"replacement time": 2,
+		"shop visit cost": 10,
+		"cost escalation rate per year": 3,
+		"life prediction": [{
+			"lambda": 20,
+			"k": 5
+		}],
+		"total cost": 40
+
+	},
+	"scenario 2": {
+		"Manufactured unit cost": 5.32,
+		"operational and spare units": 250,
+		"operational units produced": 20,
+		"spare units produced": 2000,
+		"usage hours per month": 9,
+		"replacement time": 2.5,
+		"shop visit cost": 17.0,
+		"cost escalation rate per year": 5.3,
+		"life prediction": [{
+			"lambda": 4,
+			"k": 2
+		}],
+		"total cost": 52
+
+	},
+	"scenario 3": {
+		"Manufactured unit cost": 6.4,
+		"operational and spare units": 2130,
+		"operational units produced": 2100,
+		"spare units produced": 2000,
+		"usage hours per month": 90,
+		"replacement time": 250,
+		"shop visit cost": 17,
+		"cost escalation rate per year": 5.3,
+		"life prediction": [{
+			"lambda": 9,
+			"k": 5
+		}],
+		"total cost": 52421
+
+	},
+	"scenario 4": {
+		"Manufactured unit cost": 5.32,
+		"operational and spare units": 25000,
+		"operational units produced": 2000,
+		"spare units produced": 2000,
+		"usage hours per month": 90,
+		"replacement time": 25,
+		"shop visit cost": 170,
+		"cost escalation rate per year": 53,
+		"life prediction": [{
+			"lambda": 9,
+			"k": 5
+		}],
+		"total cost": 5200421
+	}
+}

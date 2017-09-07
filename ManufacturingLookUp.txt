@@ -1,0 +1,141 @@
+{
+	"scenario 1": {
+		"residual stress": 40,
+		"surface roughness": 20,
+		"manufacturing": [{
+				"process type": "gear cutting",
+				"process": "hobbing",
+				"order": 1,
+				"time": 6,
+				"residual stress": 12,
+				"material type": "Steel",
+				"max raw material hardness":41,
+				"raw material shape":"cylindrical",
+				"allowable gear type":"sun,spur gear,helical,gear,worm,worm gear",
+				"max gear outside diameter":6000,
+				"max gear module":45,
+				"max gear face width":2200,
+				"best surface finish":2200,
+				"worst surface finish":25,
+				"best tolerance":13,
+				"hardness after process":"NA",
+				"depth of hardness":"NA",
+				"process cost":300
+
+			},
+			{
+				"process type": "soft finishing",
+				"process": "shaving",
+				"order": 2,
+				"time": 10,
+				"residual stress": 24,
+				"material type": "Steel",
+				"max raw material hardness":41,
+				"raw material shape":"cylindrical",
+				"allowable gear type":"sun,spur gear,helical,gear,worm,worm gear",
+				"max gear outside diameter":600,
+				"max gear module":18,
+				"max gear face width":500,
+				"best surface finish":10,
+				"worst surface finish":40,
+				"best tolerance":14,
+				"hardness after process":"NA",
+				"depth of hardness":"NA",
+				"process cost":300
+			},
+			{
+				"process type": "hard finishing",
+				"process": "grinding",
+				"order": 3,
+				"time": 13,
+				"residual stress": 4,
+				"material type": "Steel",
+				"max raw material hardness":70,
+				"raw material shape":"cylindrical",
+				"allowable gear type":"sun,spur gear,helical,gear,worm,worm gear",
+				"max gear outside diameter":6000,
+				"max gear module":35,
+				"max gear face width":1600,
+				"best surface finish":0.025,
+				"worst surface finish":6.3,
+				"best tolerance":15,
+				"hardness after process":"NA",
+				"depth of hardness":"NA",
+				"process cost":300
+			}
+		]
+	},
+
+	"scenario 2": {
+		"residual stress": 50,
+		"surface roughness": 10,
+		"manufacturing": [{
+				"process type": "gear cutting",
+				"process": "hobbing",
+				"order": 1,
+				"time": 6,
+				"machine": "gear cutting machine 6",
+				"residual stress": 12,
+				"material type": "Steel",
+				"max raw material hardness":41,
+				"raw material shape":"cylindrical",
+				"allowable gear type":"sun,spur gear,helical,gear,worm,worm gear",
+				"max gear outside diameter":6000,
+				"max gear module":45,
+				"max gear face width":2200,
+				"best surface finish":2200,
+				"worse surface finish":25,
+				"best tolerance":13,
+				"hardness after process":"NA",
+				"depth of hardness":"NA",
+				"process cost":300
+
+			},
+			{
+				"process type": "soft finishing",
+				"process": "shaving",
+				"order": 2,
+				"time": 10,
+				"machine": "soft finishing machine 2",
+				"residual stress": 20,
+				"material type": "Steel",
+				"max raw material hardness":41,
+				"raw material shape":"cylindrical",
+				"allowable gear type":"sun,spur gear,helical,gear,worm,worm gear",
+				"max gear outside diameter":600,
+				"max gear module":18,
+				"max gear face width":500,
+				"best surface finish":10,
+				"worse surface finish":40,
+				"best tolerance":14,
+				"hardness after process":"NA",
+				"depth of hardness":"NA",
+				"process cost":300
+
+			},
+			{
+				"process type": "hardening",
+				"process": "carburizing",
+				"order": 3,
+				"time": 12,
+				"machine": " hardening machine 6",
+				"residual stress": 31,
+				"material type": "Steel",
+				"max raw material hardness":70,
+				"raw material shape":"cylindrical",
+				"allowable gear type":"sun,spur gear,helical,gear,worm,worm gear",
+				"max gear outside diameter":6000,
+				"max gear module":35,
+				"max gear face width":1600,
+				"best surface finish":0.025,
+				"worse surface finish":6.3,
+				"best tolerance":15,
+				"hardness after process":"NA",
+				"depth of hardness":"NA",
+				"process cost":300
+
+			}
+		]
+	}
+
+}
